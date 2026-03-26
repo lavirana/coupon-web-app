@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coupon Crafter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Coupon Crafter</h1>
+        <p>Create and copy custom coupon codes in seconds.</p>
+
+        <form id="coupon-form" class="grid">
+          <label>
+            Store Name
+            <input id="store" type="text" placeholder="e.g., Fresh Market" required />
+          </label>
+
+          <label>
+            Discount Type
+            <select id="discount-type">
+              <option value="percent">Percent Off</option>
+              <option value="amount">Dollar Amount</option>
+              <option value="shipping">Free Shipping</option>
+            </select>
+          </label>
+
+          <label>
+            Discount Value
+            <input id="discount-value" type="number" min="1" placeholder="e.g., 15" />
+          </label>
+
+          <label>
+            Expiration Date
+            <input id="expiry" type="date" />
+          </label>
+
+          <label>
+            Prefix (optional)
+            <input id="prefix" type="text" maxlength="8" placeholder="SAVE" />
+          </label>
+
+          <button type="submit">Generate Coupon</button>
+        </form>
+      </section>
+
+      <section id="result" class="card hidden" aria-live="polite">
+        <h2>Your Coupon</h2>
+        <p id="summary"></p>
+        <div class="coupon-row">
+          <code id="coupon-code"></code>
+          <button id="copy-btn" type="button">Copy</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

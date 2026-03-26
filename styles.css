@@ -1,0 +1,84 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f4f9ff, #eefbf4);
+  color: #132238;
+}
+
+.container {
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  box-shadow: 0 12px 28px rgba(19, 34, 56, 0.12);
+}
+
+.grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.6rem;
+  border: 1px solid #ccd6e5;
+}
+
+button {
+  border: none;
+  background: #0069ff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+.coupon-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+code {
+  display: inline-block;
+  background: #f1f5ff;
+  border: 1px dashed #8098d6;
+  color: #18306b;
+  border-radius: 0.6rem;
+  padding: 0.65rem 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
